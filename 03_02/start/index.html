@@ -3,9 +3,19 @@
 <head>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.29/browser.js"></script>
 	<script type="text/babel">
-		const birthYear = 1985;
-		var age = 2015 - birthYear;
-		console.console.log(age);
+		
+		function coldEnough(deg) {
+			const freezingTemp = 32;
+			if (freezingTemp <= deg) {
+				return deg + " is above freexing.";
+			} else {
+				return deg + "is below freezing.";
+			}
+		}
+
+		console.console.log(coldEnough(40));
+		console.console.log(coldEnough(12));
+		console.console.log(coldEnough(-10));
 		
 	</script>
 	<title>Const Keyword</title>
